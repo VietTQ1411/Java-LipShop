@@ -1,0 +1,299 @@
+body {
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#notify {
+    display: inline;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.m-center {
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.clear-mp {
+    margin: 0px;
+    padding: 0px;
+}
+
+.small-hide {
+    display: none;
+}
+
+.small-p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.md-hide {
+    display: block;
+}
+
+.md-hide-only {
+    display: block;
+}
+
+.lg-hide {
+    display: block;
+}
+
+.md-show {
+    display: none;
+}
+
+.lg-show {
+    display: none;
+}
+
+.md-show-only {
+    display: none;
+}
+
+.text-14-16-17-16-18 {
+    font-size: 14px;
+}
+
+.text-14-15-15-16-16 {
+    font-size: 14px;
+}
+
+.text-13-14-14-14-15 {
+    font-size: 13px;
+}
+
+.text-13-14 {
+    font-size: 13px;
+}
+
+.text-15-16-17-17-18 {
+    font-size: 15px;
+}
+
+.text-22-18-18-18-20 {
+    font-size: 22px;
+}
+
+.text-23-18-19-19-21 {
+    font-size: 23px;
+}
+
+.text-22-21-21-21-22 {
+    font-size: 22px;
+}
+
+.text-23-21-21-22-23 {
+    font-size: 23px;
+}
+
+.text-16-15-15-15-16 {
+    font-size: 16px;
+}
+
+.text-13-12-11-12-12 {
+    font-size: 13px;
+}
+
+.text-16-15-14-15-15 {
+    font-size: 16px;
+}
+
+.text-16-16-14-16-16 {
+    font-size: 16px;
+}
+
+@media (min-width: 576px) {
+    .small-hide {
+        display: block;
+    }
+    .small-p {
+        margin-bottom: 0.5em;
+        font-size: 16px;
+    }
+    .text-14-16-17-16-18 {
+        font-size: 16px;
+    }
+    .text-14-15-15-16-16 {
+        font-size: 15px;
+    }
+    .text-13-14-14-14-15 {
+        font-size: 14px;
+    }
+    .text-13-14 {
+        font-size: 14px;
+    }
+    .text-15-16-17-17-18 {
+        font-size: 16px;
+    }
+    .text-22-18-18-18-20 {
+        font-size: 18px;
+    }
+    .text-23-18-19-19-21 {
+        font-size: 18px;
+    }
+    .text-22-21-21-21-22 {
+        font-size: 21px;
+    }
+    .text-23-21-21-22-23 {
+        font-size: 21px;
+    }
+    .text-16-15-15-15-16 {
+        font-size: 15px;
+    }
+    .text-13-12-11-12-12 {
+        font-size: 12px;
+    }
+    .text-16-15-14-15-15 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-14-16-17-16-18 {
+        font-size: 17px;
+    }
+    .text-14-15-15-16-16 {
+        font-size: 15px;
+    }
+    .text-13-14-14-14-15 {
+        font-size: 14px;
+    }
+    .text-15-16-17-17-18 {
+        font-size: 17px;
+    }
+    .md-hide {
+        display: none;
+    }
+    .md-hide-only {
+        display: none;
+    }
+    .md-show {
+        display: block;
+    }
+    .text-23-18-19-19-21 {
+        font-size: 19px;
+    }
+    .text-13-12-11-12-12 {
+        font-size: 11px;
+    }
+    .text-16-15-14-15-15 {
+        font-size: 14px;
+    }
+    .text-16-16-14-16-16 {
+        font-size: 14px;
+    }
+    .md-show-only {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-14-16-17-16-18 {
+        font-size: 16px;
+    }
+    .text-14-15-15-16-16 {
+        font-size: 16px;
+    }
+    .text-13-14-14-14-15 {
+        font-size: 14px;
+    }
+    .text-15-16-17-17-18 {
+        font-size: 17px;
+    }
+    .md-hide-only {
+        display: block;
+    }
+    .text-23-21-21-22-23 {
+        font-size: 22px;
+    }
+    .text-13-12-11-12-12 {
+        font-size: 12px;
+    }
+    .text-16-15-14-15-15 {
+        font-size: 15px;
+    }
+    .text-16-16-14-16-16 {
+        font-size: 16px;
+    }
+    .md-show-only {
+        display: none;
+    }
+    .lg-hide {
+        display: none;
+    }
+    .lg-show {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-14-16-17-16-18 {
+        font-size: 18px;
+    }
+    .text-14-15-15-16-16 {
+        font-size: 16px;
+    }
+    .text-13-14-14-14-15 {
+        font-size: 15px;
+    }
+    .text-15-16-17-17-18 {
+        font-size: 18px;
+    }
+    .text-22-18-18-18-20 {
+        font-size: 20px;
+    }
+    .text-23-18-19-19-21 {
+        font-size: 21px;
+    }
+    .text-22-21-21-21-22 {
+        font-size: 22px;
+    }
+    .text-23-21-21-22-23 {
+        font-size: 23px;
+    }
+    .text-16-15-15-15-16 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,197 @@
+.section-title {
+    padding-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        h1 {
+            font-size: 1.5em;
+        }
+        padding-bottom: 8px;
+    }
+}
+
+#over-view {
+    padding: 30px 0;
+    .cart {
+        padding-top: 15px;
+        .cart-view {
+            border: 1px solid rgba(139, 139, 139, 0.253);
+            border-radius: 20px;
+            padding: 20px;
+            .cart-items {
+                padding: 2px;
+                img {
+                    min-width: 70px;
+                    width: 100%;
+                }
+                .cart-body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    flex-direction: column;
+                }
+            }
+        }
+        .total {
+            padding: 20px 10px;
+            border-bottom: 1px solid rgba(139, 139, 139, 0.253);
+            .sumary-total {
+                margin: 20px 0 10px;
+                span {
+                    padding: 0 5px;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                del {
+                    color: rgba(109, 109, 109, 0.966);
+                }
+                h5 {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                h3 {
+                    font-weight: 400;
+                    padding-top: 10px;
+                }
+            }
+            .coupons {
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(139, 139, 139, 0.253);
+            }
+            .coupons form {
+                width: 70%;
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            .coupons button {
+                width: 25%;
+                display: inline-block;
+                margin-top: -5px;
+            }
+            @media (max-width: 576px) {
+                .coupons form {
+                    width: 60%;
+                }
+                .coupons button {
+                    width: 35%;
+                }
+            }
+            @media (max-width: 765px) {
+                .coupons form {
+                    width: 70%;
+                }
+                .coupons button {
+                    width: 25%;
+                }
+            }
+            @media (max-width: 991px) {
+                .coupons form {
+                    width: 50%;
+                }
+                .coupons button {
+                    width: 35%;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            .total {
+                padding: 20px 0 0 30px;
+            }
+        }
+    }
+}
+
+#ship {
+    .customers-infor {
+        border: 1px solid rgb(226, 226, 226) !important;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        .row {
+            padding: 5px 0;
+        }
+    }
+    @media (max-width: 576px) {
+        .customers-infor {
+            span {
+                font-size: .9em;
+            }
+        }
+    }
+    .btn-submit {
+        margin-top: 20px;
+    }
+}
+
+#other-address {
+    padding: 30px 0;
+    #new-address {
+        display: none;
+        .new-take {
+            border: 1px solid rgb(226, 226, 226) !important;
+            border-radius: 20px;
+            padding: 20px;
+        }
+    }
+}
+
+.button-back {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &:after {
+            content: '\00ab';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: -20px;
+            transition: 0.5s;
+        }
+    }
+    &:hover span {
+        padding-left: 20px;
+        &:after {
+            opacity: 1;
+            left: 0;
+        }
+    }
+}
+
+.button-next {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+    }
+    &:hover span {
+        padding-right: 20px;
+        &:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+}

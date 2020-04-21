@@ -1,0 +1,118 @@
+nav {
+    #navbarToggler {
+        .navbar-nav {
+            .nav-link:hover {
+                color: rgba(254, 157, 5, 0.99);
+            }
+        }
+    }
+    .nav-link {
+        display: block;
+        padding: .3rem 1rem;
+    }
+    li {
+        .drop-link {
+            position: relative;
+            margin-left: 0;
+            background-color: rgba(231, 231, 231, 0.849);
+            opacity: 0.6;
+            padding-left: 2%;
+            padding-right: 2%;
+            transition: all .2s ease 0.5s;
+            @media (min-width: 992px) {
+                position: absolute;
+                margin-left: -1.55rem;
+            }
+            li {
+                display: none;
+                margin-bottom: 0.5em;
+                transition: all .5s ease 0s;
+                a {
+                    list-style: none;
+                    padding-top: 0px;
+                    &:hover {
+                        color: rgba(254, 159, 5, 0.959);
+                    }
+                }
+            }
+        }
+        &:hover {
+            .drop-link {
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+    #cart {
+        display: none;
+        @media (min-width: 321px) {
+            display: block;
+        }
+        button {
+            border: 1px solid black;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .cart-quantity {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 26px;
+            // padding: 2px 4px 3px 4px;
+            border-radius: 50%;
+            background-color: rgba(255, 104, 104, 0.918);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(117, 62, 62);
+        }
+    }
+    #login {
+        .btn-login {
+            background-color: #111;
+            color: #fff;
+            &::after {
+                display: none;
+            }
+        }
+        #login-form {
+            overflow: auto;
+            width: 280px;
+            .small-login {
+                margin: 0;
+            }
+            @media (min-width: 321px) {
+                width: 300px;
+            }
+            @media (min-width: 576px) {
+                width: 400px;
+                .small-login {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+    }
+    .nav-search {
+        input[type=search] {
+            width: 100px;
+        }
+        @media (min-width: 768px) {
+            input[type=search]:focus {
+                width: 200px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+        }
+        @media (min-width: 992px) {
+            input[type=search] {
+                width: 200px;
+            }
+        }
+    }
+    .nav-user {
+        button {
+            border: 1px solid black;
+        }
+    }
+}

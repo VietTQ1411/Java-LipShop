@@ -1,0 +1,82 @@
+/*
+buttom back hover animation
+*/
+.button-back {
+  border-radius: 1.5em;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-back span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-back:hover span {
+  padding-left: 25px;
+}
+
+.button-back:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/*
+buttom next hover animation
+*/
+.button-next {
+  border-radius: 1.5em;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  min-width: 120px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-next span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next:hover span {
+  padding-right: 25px;
+}
+
+.button-next:hover span:after {
+  opacity: 1;
+  right: 0;
+}

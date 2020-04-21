@@ -1,0 +1,73 @@
+/*
+buttom back hover animation
+*/
+
+.button-back {
+    border-radius: 1.5em;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &:after {
+            content: '\00ab';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: -20px;
+            transition: 0.5s;
+        }
+    }
+    &:hover {
+        span {
+            padding-left: 25px;
+            &:after {
+                opacity: 1;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+/*
+buttom next hover animation
+*/
+
+.button-next {
+    border-radius: 1.5em;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    min-width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        &:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+    }
+    &:hover span {
+        padding-right: 25px;
+        &:after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.title-head-section {
+    margin-bottom: 40px;
+    h2 {
+        padding: 0px 50px 0px 50px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        background-image: url(../image/background/title_bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (max-width: 567px) {
+            font-size: 22px;
+        }
+    }
+}
+
+
+/*
+    Đường dẫn
+*/
+
+#breadcrumb {
+    padding: 120px 50px;
+    background-image: url(../image/background/Banner3_X-1920x670.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    li {
+        display: inline;
+    }
+}
+
+
+/*
+    cart card
+*/
+
+#cart-table {
+    margin-top: 100px;
+    padding: 0 0 50px;
+    font-size: smaller;
+    .cart-card {
+        margin-bottom: 20px;
+    }
+    .cart-product {
+        border: none;
+        border-radius: 25px;
+        margin: 0 auto;
+        margin: 30px 0;
+        @media (min-width: 768px) {
+            border: 1px solid black;
+        }
+        .cart-product-detail {
+            border-bottom: 1px solid black;
+            @media (min-width: 768px) {
+                border-bottom: none;
+            }
+            .cart-product-img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    min-width: 80px;
+                    border-radius: 25px;
+                }
+            }
+            .cart-product-name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .cart-product-quantity {
+                float: right;
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                justify-content: flex-end;
+                flex-direction: row;
+                a {
+                    text-align: right;
+                    margin-top: 20px;
+                }
+                i {
+                    z-index: 100;
+                    margin: 0;
+                    line-height: 28px;
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 50%;
+                    border-style: hidden;
+                    background: none !important;
+                    color: #8f8f8f;
+                    border: solid 1px #8f8f8f;
+                    text-align: center;
+                    padding: 0px;
+                    cursor: pointer;
+                    margin: 0 3px;
+                    font-size: 12px;
+                }
+                input {
+                    width: 60px;
+                    height: 30px;
+                    font-size: 16px;
+                    margin-top: -.2em;
+                    border-radius: 25px;
+                }
+                @media (max-width: 576px) {
+                    i {
+                        line-height: 17px;
+                        height: 18px;
+                        width: 18px;
+                    }
+                    .remove {
+                        i {
+                            line-height: 16px;
+                        }
+                    }
+                    input {
+                        height: 1.8em;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .cart-product-statistic {
+            display: none;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+        }
+        .remove {
+            i {
+                margin: 0 10px;
+            }
+        }
+    }
+    .form-control {
+        display: inline-block;
+    }
+    .cart-total {
+        padding: 30px 0;
+        text-align: right;
+    }
+    .btn {
+        padding: 15px;
+        border-radius: 25px;
+    }
+    @media (min-width: 576px) {
+        .container-cart {
+            max-width: 100%;
+            margin: 20px auto;
+        }
+    }
+    @media (max-width: 576px) {
+        h6 {
+            font-size: 12px;
+        }
+    }
+    @media (min-width: 992px) {
+        font-size: medium;
+        .container-cart {
+            width: 100%;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container-cart {
+            max-width: 1140px;
+        }
+    }
+}

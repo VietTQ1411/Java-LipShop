@@ -1,0 +1,131 @@
+nav #navbarToggler .navbar-nav .nav-link:hover {
+  color: rgba(254, 157, 5, 0.99);
+}
+
+nav .nav-link {
+  display: block;
+  padding: .3rem 1rem;
+}
+
+nav li .drop-link {
+  position: relative;
+  margin-left: 0;
+  background-color: rgba(231, 231, 231, 0.849);
+  opacity: 0.6;
+  padding-left: 2%;
+  padding-right: 2%;
+  -webkit-transition: all .2s ease 0.5s;
+  transition: all .2s ease 0.5s;
+}
+
+@media (min-width: 992px) {
+  nav li .drop-link {
+    position: absolute;
+    margin-left: -1.55rem;
+  }
+}
+
+nav li .drop-link li {
+  display: none;
+  margin-bottom: 0.5em;
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+nav li .drop-link li a {
+  list-style: none;
+  padding-top: 0px;
+}
+
+nav li .drop-link li a:hover {
+  color: rgba(254, 159, 5, 0.959);
+}
+
+nav li:hover .drop-link li {
+  display: block;
+}
+
+nav #cart {
+  display: none;
+}
+
+@media (min-width: 321px) {
+  nav #cart {
+    display: block;
+  }
+}
+
+nav #cart button {
+  border: 1px solid black;
+}
+
+nav #cart button img {
+  width: 24px;
+  height: 24px;
+}
+
+nav #cart .cart-quantity {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 26px;
+  border-radius: 50%;
+  background-color: rgba(255, 104, 104, 0.918);
+  color: white;
+  border: 1px solid #753e3e;
+}
+
+nav #login .btn-login {
+  background-color: #111;
+  color: #fff;
+}
+
+nav #login .btn-login::after {
+  display: none;
+}
+
+nav #login #login-form {
+  overflow: auto;
+  width: 280px;
+}
+
+nav #login #login-form .small-login {
+  margin: 0;
+}
+
+@media (min-width: 321px) {
+  nav #login #login-form {
+    width: 300px;
+  }
+}
+
+@media (min-width: 576px) {
+  nav #login #login-form {
+    width: 400px;
+  }
+  nav #login #login-form .small-login {
+    margin-bottom: 0.5em;
+  }
+}
+
+nav .nav-search input[type=search] {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  nav .nav-search input[type=search]:focus {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+}
+
+@media (min-width: 992px) {
+  nav .nav-search input[type=search] {
+    width: 200px;
+  }
+}
+
+nav .nav-user button {
+  border: 1px solid black;
+}

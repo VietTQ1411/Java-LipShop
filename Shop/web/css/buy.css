@@ -1,0 +1,239 @@
+.section-title {
+  padding-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    padding-bottom: 8px;
+  }
+  .section-title h1 {
+    font-size: 1.5em;
+  }
+}
+
+#over-view {
+  padding: 30px 0;
+}
+
+#over-view .cart {
+  padding-top: 15px;
+}
+
+#over-view .cart .cart-view {
+  border: 1px solid rgba(139, 139, 139, 0.253);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#over-view .cart .cart-view .cart-items {
+  padding: 2px;
+}
+
+#over-view .cart .cart-view .cart-items img {
+  min-width: 70px;
+  width: 100%;
+}
+
+#over-view .cart .cart-view .cart-items .cart-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#over-view .cart .total {
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(139, 139, 139, 0.253);
+}
+
+#over-view .cart .total .sumary-total {
+  margin: 20px 0 10px;
+}
+
+#over-view .cart .total .sumary-total span {
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#over-view .cart .total .sumary-total del {
+  color: rgba(109, 109, 109, 0.966);
+}
+
+#over-view .cart .total .sumary-total h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#over-view .cart .total .sumary-total h3 {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+#over-view .cart .total .coupons {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(139, 139, 139, 0.253);
+}
+
+#over-view .cart .total .coupons form {
+  width: 70%;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#over-view .cart .total .coupons button {
+  width: 25%;
+  display: inline-block;
+  margin-top: -5px;
+}
+
+@media (max-width: 576px) {
+  #over-view .cart .total .coupons form {
+    width: 60%;
+  }
+  #over-view .cart .total .coupons button {
+    width: 35%;
+  }
+}
+
+@media (max-width: 765px) {
+  #over-view .cart .total .coupons form {
+    width: 70%;
+  }
+  #over-view .cart .total .coupons button {
+    width: 25%;
+  }
+}
+
+@media (max-width: 991px) {
+  #over-view .cart .total .coupons form {
+    width: 50%;
+  }
+  #over-view .cart .total .coupons button {
+    width: 35%;
+  }
+}
+
+@media (max-width: 991px) {
+  #over-view .cart .total {
+    padding: 20px 0 0 30px;
+  }
+}
+
+#ship .customers-infor {
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#ship .customers-infor .row {
+  padding: 5px 0;
+}
+
+@media (max-width: 576px) {
+  #ship .customers-infor span {
+    font-size: .9em;
+  }
+}
+
+#ship .btn-submit {
+  margin-top: 20px;
+}
+
+#other-address {
+  padding: 30px 0;
+}
+
+#other-address #new-address {
+  display: none;
+}
+
+#other-address #new-address .new-take {
+  border: 1px solid #e2e2e2 !important;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.button-back {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-back span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-back:hover span {
+  padding-left: 20px;
+}
+
+.button-back:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.button-next {
+  font-size: 18px;
+  padding: 8px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-next span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button-next:hover span {
+  padding-right: 20px;
+}
+
+.button-next:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,301 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+/* các tiêu đề section */
+.title-head-section {
+  margin-bottom: 40px;
+}
+
+.title-head-section h2 {
+  padding: 0px 50px 0px 50px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url(../image/background/title_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 567px) {
+  .title-head-section h2 {
+    font-size: 22px;
+  }
+}
+
+/*section 2 : Giới thiệu Shop */
+#about {
+  width: 100%;
+  padding: 80px 50px;
+  background-image: url(../image/background/contact-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #353535;
+}
+
+/*section 3 : Danh mục sản phẩm */
+#banner {
+  padding: 80px 50px 0px;
+  color: #353535;
+}
+
+#banner .banner-lip {
+  overflow: hidden;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner .banner-lip img {
+  width: 100%;
+  min-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#banner .banner-lip img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner .banner-skin {
+  overflow: hidden;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner .banner-skin img {
+  width: 100%;
+  min-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#banner .banner-skin img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner .banner-cosmetics {
+  overflow: hidden;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner .banner-cosmetics img {
+  width: 100%;
+  min-height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#banner .banner-cosmetics img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+}
+
+#banner a p {
+  position: absolute;
+  z-index: 5;
+  left: 30px;
+  top: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 9px 18px;
+}
+
+#banner a .btn {
+  opacity: 0.5;
+}
+
+#banner a .btn:hover {
+  opacity: 1;
+  border: 1px solid #0f1727;
+}
+
+#banner a .btn:hover::before {
+  opacity: 0.5;
+}
+
+/*section 4 : một số sản phẩm ngẫu nhiên */
+#section-product {
+  padding: 80px 50px 0px;
+}
+
+@media (max-width: 567px) {
+  #section-product .row .card-product:nth-child(n+7) {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  #section-product .row .card-product:nth-child(n+7) {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #section-product .row .card-product:nth-child(n+7) {
+    display: block;
+  }
+}
+
+/*section 5 : Thông tin liên lạc */
+#contact {
+  padding: 80px 50px;
+  color: black;
+  background-image: url(../image/background/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*section 6 : Sản phẩm hot */
+#hot-sale {
+  padding: 80px 50px;
+}
+
+@media (min-width: 767px) {
+  #hot-sale .row .card-product:nth-last-child(1) {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #hot-sale .row .card-product:nth-last-child(1) {
+    display: block;
+  }
+}
+
+/*
+   separator 
+*/
+.separator {
+  right: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  border: 1px solid #ebebeb;
+}
+
+/*
+  section 7:  tin tức
+*/
+.new {
+  position: relative;
+  padding-top: 20px;
+}
+
+.new .title .sep-line {
+  width: 60%;
+  height: 1px;
+  border: 1px solid black;
+  position: absolute;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  left: 50%;
+  background-color: #4f4f4f;
+}
+
+.new .title h2 {
+  position: relative;
+  padding: 0 40px;
+  z-index: 5;
+  display: inline-block;
+  font-size: 36px;
+  text-align: center;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.new .title p {
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.new .title a {
+  color: red;
+}
+
+.new .news {
+  margin-top: 50px;
+}
+
+.new .news .news-img {
+  border-radius: 4px 4px 0 0;
+}
+
+.new .news .news-img img {
+  width: 95%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new .news .news-content {
+  padding: 10px 20px;
+}
+
+.new .news .news-content .date {
+  font-size: 14px;
+  color: #a7a9ac;
+}
+
+.new .news .news-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+}

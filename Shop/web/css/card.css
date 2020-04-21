@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*Thẻ sản phẩm*/
+.card {
+  border-radius: .75rem;
+  border: 1px solid #ffe0da;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 0 4px 8px 0 #ffe0da;
+          box-shadow: 0 4px 8px 0 #ffe0da;
+}
+
+.card .card-img img {
+  padding: 10px 0;
+  border-radius: .75rem .75rem 0rem 0rem;
+  max-width: 188px;
+  max-height: 200px;
+  width: 80%;
+}
+
+.card .card-body {
+  background-color: rgba(255, 254, 254, 0.74);
+}
+
+.card .card-body .star12 {
+  background-color: red;
+  position: relative;
+}
+
+.card .card-body .star12::before, .card .card-body .star12::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+
+.card .card-body .star12:before {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.card .card-body .star12:after {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.card .card-body .sold-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 65px;
+  background-image: url("../image/background/soldout.png");
+  background-size: cover;
+}
+
+.card .card-body .card-sale {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 60px;
+  height: 55px;
+  padding: 5px;
+  background-image: url("../image/background/sale.jpg");
+  background-size: cover;
+}
+
+.card .card-body .card-sale h2 {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.card .card-body .card-name {
+  height: 60px;
+  font-size: medium;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card .card-body .card-price {
+  font-size: large;
+  color: red;
+  font-weight: 600;
+}
+
+.card .card-body .card-old-price {
+  font-size: medium;
+  color: #8e9098;
+  font-weight: 400;
+}
+
+.card .card-footer {
+  background-color: rgba(255, 215, 215, 0.74);
+  border: 1px solid #ffe0da;
+  border-radius: 0rem 0rem .75rem .75rem;
+  position: absolute;
+  width: 100%;
+  top: 98%;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all .75s ease-in-out;
+  transition: all .75s ease-in-out;
+  z-index: 100;
+}
+
+.card .card-footer p {
+  margin: 5px;
+}
+
+.card .card-footer:hover a {
+  cursor: pointer;
+  color: #f54949;
+}
+
+.card:hover {
+  border-bottom: none;
+}
+
+.card:hover .card-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card:hover .card-footer {
+  opacity: 1;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.card a:hover {
+  color: rgba(255, 102, 0, 0.863);
+}
+
+.card a:hover .card-sale {
+  color: black;
+}

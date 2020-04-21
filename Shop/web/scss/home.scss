@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+#logo {
+    img {
+        width: 100%;
+    }
+}
+
+
+/* các tiêu đề section */
+
+.title-head-section {
+    margin-bottom: 40px;
+    h2 {
+        padding: 0px 50px 0px 50px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        background-image: url(../image/background/title_bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (max-width: 567px) {
+            font-size: 22px;
+        }
+    }
+}
+
+
+/*section 2 : Giới thiệu Shop */
+
+#about {
+    width: 100%;
+    padding: 80px 50px;
+    // background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgb(255, 226, 226));
+    background-image: url(../image/background/contact-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(53, 53, 53);
+}
+
+
+/*section 3 : Danh mục sản phẩm */
+
+#banner {
+    padding: 80px 50px 0px;
+    color: rgb(53, 53, 53);
+    .banner-lip {
+        overflow: hidden;
+        transition-timing-function: linear;
+        transition: width 2s, height 2s, transform 2s;
+        img {
+            width: 100%;
+            min-height: 180px;
+            object-fit: cover;
+            &:hover {
+                transform: scale(1.3);
+                transition-timing-function: linear;
+                transition: width 2s, height 2s, transform 2s;
+            }
+        }
+    }
+    .banner-skin {
+        overflow: hidden;
+        transition-timing-function: linear;
+        transition: width 2s, height 2s, transform 2s;
+        img {
+            width: 100%;
+            min-height: 180px;
+            object-fit: cover;
+            &:hover {
+                transform: scale(1.3);
+                transition-timing-function: linear;
+                transition: width 2s, height 2s, transform 2s;
+            }
+        }
+    }
+    .banner-cosmetics {
+        overflow: hidden;
+        transition-timing-function: linear;
+        transition: width 2s, height 2s, transform 2s;
+        img {
+            width: 100%;
+            min-height: 180px;
+            object-fit: cover;
+            &:hover {
+                transform: scale(1.3);
+                transition-timing-function: linear;
+                transition: width 2s, height 2s, transform 2s;
+            }
+        }
+    }
+    a {
+        p {
+            position: absolute;
+            z-index: 5;
+            left: 30px;
+            top: 50%;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 9px 18px;
+        }
+        .btn {
+            opacity: 0.5;
+            &:hover {
+                &::before {
+                    opacity: 0.5;
+                }
+                opacity: 1;
+                border: 1px solid #0f1727;
+            }
+        }
+    }
+}
+
+
+/*section 4 : một số sản phẩm ngẫu nhiên */
+
+#section-product {
+    padding: 80px 50px 0px;
+}
+
+@media (max-width: 567px) {
+    #section-product .row .card-product:nth-child(n+7) {
+        display: block;
+    }
+}
+
+@media (min-width: 767px) {
+    #section-product .row .card-product:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #section-product .row .card-product:nth-child(n+7) {
+        display: block;
+    }
+}
+
+
+/*section 5 : Thông tin liên lạc */
+
+#contact {
+    padding: 80px 50px;
+    color: rgb(0, 0, 0);
+    background-image: url(../image/background/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*section 6 : Sản phẩm hot */
+
+#hot-sale {
+    padding: 80px 50px;
+}
+
+@media (min-width: 767px) {
+    #hot-sale .row .card-product:nth-last-child(1) {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #hot-sale .row .card-product:nth-last-child(1) {
+        display: block;
+    }
+}
+
+
+/*
+   separator 
+*/
+
+.separator {
+    right: 50%;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #ebebeb;
+}
+
+
+/*
+  section 7:  tin tức
+*/
+
+.new {
+    position: relative;
+    padding-top: 20px;
+    .title {
+        .sep-line {
+            width: 60%;
+            height: 1px;
+            border: 1px solid black;
+            position: absolute;
+            transform: translate(-50%, 0);
+            position: absolute;
+            top: 40px;
+            z-index: 2;
+            left: 50%;
+            background-color: #4f4f4f;
+        }
+        h2 {
+            position: relative;
+            padding: 0 40px;
+            z-index: 5;
+            display: inline-block;
+            font-size: 36px;
+            text-align: center;
+            background-color: #fff;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        a {
+            color: red;
+        }
+    }
+    .news {
+        margin-top: 50px;
+        .news-img {
+            border-radius: 4px 4px 0 0;
+            img {
+                width: 95%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+        .news-content {
+            padding: 10px 20px;
+            .date {
+                font-size: 14px;
+                color: #a7a9ac;
+            }
+            h4 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}
